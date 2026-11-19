@@ -1,0 +1,23 @@
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+# Python
+__pycache__/
+.venv/
+*.pyc
+# JavaScript
+node_modules/
+dist/
+# R
+.Rhistory
+.RData
+.Rproj.user/
+# Local datasets and trained models
+ml-r/data/*
+!ml-r/data/.gitkeep
+ml-r/models/*
+!ml-r/models/.gitkeep
+# IDE / OS
+.vscode/
+.DS_Store
