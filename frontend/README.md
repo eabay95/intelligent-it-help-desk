@@ -1,103 +1,26 @@
-# Intelligent IT Help Desk — Frontend
+# React help desk
 
-## Overview
+The app provides employee signup, login, logout, session restoration, and password recovery through Supabase Auth. It uses the server's `/auth/me` response for navigation. Employee tickets and technician permissions are scoped by FastAPI.
 
-The frontend for the Intelligent IT Help Desk provides a web interface for employees, customers, and IT technicians to interact with the help desk system.
+## Setup and run
 
-Users can submit and track support tickets, while IT technicians can manage and resolve incoming requests.
+From `frontend/`, copy `.env.example` to `.env` if needed and fill in `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`, and `VITE_API_BASE_URL`. Vite makes these variables public in the browser bundle, so only the public project settings belong here. Configure Email Auth and the login and recovery redirects using the [Supabase setup guide](../backend/README.md#configure-supabase).
 
-## Tech Stack
-
-- React
-- JavaScript
-- Vite
-- React Router
-- CSS
-
-## Project Structure
-
-```text
-frontend/
-├── public/
-├── src/
-│   ├── components/
-│   │   └── Navbar.jsx
-│   ├── pages/
-│   │   ├── EmployeePortal.jsx
-│   │   └── TechnicianDashboard.jsx
-│   ├── services/
-│   │   └── api.js
-│   ├── styles/
-│   │   └── index.css
-│   ├── App.jsx
-│   └── main.jsx
-├── .env.example
-├── index.html
-├── package.json
-└── README.md
-```
-
-## Setup Instructions
-
-### 1. Navigate to the Frontend Directory
-
-```bash
-cd frontend
-```
-
-### 2. Install Dependencies
-
-```bash
-npm install
-npm install react-router-dom
-```
-
-### 3. Configure Environment Variables
-
-Create a `.env` file inside the `frontend` directory.
-
-Add the following:
-
-```env
-VITE_API_BASE_URL=http://localhost:8000
-```
-
-This configures the frontend to communicate with the backend API.
-
-Do not commit the `.env` file to GitHub.
-
-### 4. Start the Development Server
-
-```bash
+```powershell
+npm ci
 npm run dev
 ```
 
-Open the local URL displayed in your terminal, typically:
+Vite stops if its requested port is occupied. To run alongside another app on port 5173, use `npm run dev -- --port 5174` and open `http://localhost:5174/login`. Add the exact origin `http://localhost:5174` to the comma-separated backend `FRONTEND_URL` list, restart FastAPI, and allow the corresponding `/login` and `/reset-password` redirect URLs in Supabase. The API URL defaults to `http://127.0.0.1:8000`.
 
-http://localhost:5173
+Use the Employee Portal to submit and track requests. A technician signs in separately and can filter tickets, view details, and change status, category, or priority. For an expired session, the API client attempts one refresh and redirects to sign-in if the session is no longer valid. A permission error keeps the signed-in session. For account recovery, use **Forgot password?** and open the link from Supabase in your browser.
 
-## Planned Features
+## Testing
 
-### Employee and Customer Portal
-- Submit IT support tickets
-- View existing tickets
-- Track ticket status
-- Receive AI-generated troubleshooting suggestions
+```powershell
+npm test
+npm run lint
+npm run build
+```
 
-### Technician Dashboard
-- View incoming support tickets
-- Manage assigned tickets
-- Update ticket statuses
-- Review AI-generated ticket classifications and recommendations
-
-## Development Notes
-
-- Reusable UI components belong in `src/components/`.
-- Application pages belong in `src/pages/`.
-- Backend API requests belong in `src/services/api.js`.
-- Global styling belongs in `src/styles/index.css`.
-- Application routing is managed through `App.jsx`.
-
-## Status
-
-Frontend structure and initial setup are part of Issue #1. Additional pages, functionality, and backend integration will be developed in future issues.
+The Node test runner renders React in jsdom, stubs the Supabase SDK, and exercises registration, login, logout, session restoration, route protection, recovery, and the employee-to-technician workflow. Automated frontend tests use isolated configuration.

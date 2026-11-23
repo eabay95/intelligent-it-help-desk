@@ -1,0 +1,41 @@
+"id","expected","version","category","confidence"
+"vpn-example","Network","tfidf-nb-v1","Other",0.774554420450543
+"vpn-auth","Network","tfidf-nb-v1","Account Access",0.999999175265493
+"wifi-drop","Network","tfidf-nb-v1","Hardware",0.950190719870315
+"dns","Network","tfidf-nb-v1","Other",0.99999954926291
+"wired","Network","tfidf-nb-v1","Software",0.999369035506501
+"files","Network","tfidf-nb-v1","Other",0.953003064633072
+"reset","Account Access","tfidf-nb-v1","Account Access",0.999999999945176
+"lockout","Account Access","tfidf-nb-v1","Software",0.999699416181793
+"mfa","Account Access","tfidf-nb-v1","Software",0.999755199465301
+"onboard","Account Access","tfidf-nb-v1","Software",0.999999970377124
+"battery","Hardware","tfidf-nb-v1","Software",0.999909862138724
+"printer","Hardware","tfidf-nb-v1","Hardware",0.985595200021774
+"display","Hardware","tfidf-nb-v1","Software",0.999953522680299
+"drive","Hardware","tfidf-nb-v1","Hardware",0.590671839741897
+"crash","Software","tfidf-nb-v1","Account Access",0.809405233767773
+"install","Software","tfidf-nb-v1","Software",0.999999999999916
+"office","Software","tfidf-nb-v1","Software",0.996131018455638
+"browser","Software","tfidf-nb-v1","Software",0.999996085014052
+"routing","Other","tfidf-nb-v1","Account Access",0.999999999705892
+"retire","Other","tfidf-nb-v1","Other",0.999999996743321
+"vpn-example","Network","tfidf-logreg-v2","Other",0.857823621687251
+"vpn-auth","Network","tfidf-logreg-v2","Other",0.924688037577922
+"wifi-drop","Network","tfidf-logreg-v2","Other",0.573794387506462
+"dns","Network","tfidf-logreg-v2","Other",0.79231384837931
+"wired","Network","tfidf-logreg-v2","Software",0.507876491060519
+"files","Network","tfidf-logreg-v2","Other",0.54638600837374
+"reset","Account Access","tfidf-logreg-v2","Account Access",0.717757917571584
+"lockout","Account Access","tfidf-logreg-v2","Software",0.515030168327668
+"mfa","Account Access","tfidf-logreg-v2","Other",0.704979004670576
+"onboard","Account Access","tfidf-logreg-v2","Other",0.671277641012998
+"battery","Hardware","tfidf-logreg-v2","Software",0.338747372789936
+"printer","Hardware","tfidf-logreg-v2","Hardware",0.572251945867867
+"display","Hardware","tfidf-logreg-v2","Software",0.711786021664465
+"drive","Hardware","tfidf-logreg-v2","Network",0.822888278338918
+"crash","Software","tfidf-logreg-v2","Software",0.553196805199393
+"install","Software","tfidf-logreg-v2","Software",0.940412361558531
+"office","Software","tfidf-logreg-v2","Software",0.724601165295428
+"browser","Software","tfidf-logreg-v2","Software",0.534213910512903
+"routing","Other","tfidf-logreg-v2","Software",0.384768652352605
+"retire","Other","tfidf-logreg-v2","Other",0.715979833092839

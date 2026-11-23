@@ -1,0 +1,91 @@
+"term","split","category","rows"
+"VPN","Test","Account Access",0
+"VPN","Train","Account Access",1
+"VPN","Test","Hardware",0
+"VPN","Train","Hardware",0
+"VPN","Test","Network",1
+"VPN","Train","Network",0
+"VPN","Test","Other",4
+"VPN","Train","Other",9
+"VPN","Test","Software",0
+"VPN","Train","Software",0
+"WiFi","Test","Account Access",0
+"WiFi","Train","Account Access",0
+"WiFi","Test","Hardware",0
+"WiFi","Train","Hardware",1
+"WiFi","Test","Network",0
+"WiFi","Train","Network",0
+"WiFi","Test","Other",4
+"WiFi","Train","Other",5
+"WiFi","Test","Software",1
+"WiFi","Train","Software",0
+"DNS","Test","Account Access",0
+"DNS","Train","Account Access",0
+"DNS","Test","Hardware",0
+"DNS","Train","Hardware",0
+"DNS","Test","Network",0
+"DNS","Train","Network",0
+"DNS","Test","Other",1
+"DNS","Train","Other",4
+"DNS","Test","Software",1
+"DNS","Train","Software",0
+"Network","Test","Account Access",0
+"Network","Train","Account Access",0
+"Network","Test","Hardware",2
+"Network","Train","Hardware",3
+"Network","Test","Network",2
+"Network","Train","Network",6
+"Network","Test","Other",58
+"Network","Train","Other",50
+"Network","Test","Software",1
+"Network","Train","Software",2
+"Login","Test","Account Access",1
+"Login","Train","Account Access",2
+"Login","Test","Hardware",0
+"Login","Train","Hardware",0
+"Login","Test","Network",1
+"Login","Train","Network",0
+"Login","Test","Other",0
+"Login","Train","Other",1
+"Login","Test","Software",4
+"Login","Train","Software",11
+"Password","Test","Account Access",1
+"Password","Train","Account Access",5
+"Password","Test","Hardware",0
+"Password","Train","Hardware",0
+"Password","Test","Network",0
+"Password","Train","Network",11
+"Password","Test","Other",2
+"Password","Train","Other",8
+"Password","Test","Software",1
+"Password","Train","Software",3
+"MFA","Test","Account Access",0
+"MFA","Train","Account Access",0
+"MFA","Test","Hardware",0
+"MFA","Train","Hardware",0
+"MFA","Test","Network",0
+"MFA","Train","Network",0
+"MFA","Test","Other",0
+"MFA","Train","Other",0
+"MFA","Test","Software",0
+"MFA","Train","Software",0
+"Hardware","Test","Account Access",2
+"Hardware","Train","Account Access",1
+"Hardware","Test","Hardware",17
+"Hardware","Train","Hardware",43
+"Hardware","Test","Network",0
+"Hardware","Train","Network",3
+"Hardware","Test","Other",8
+"Hardware","Train","Other",6
+"Hardware","Test","Software",1
+"Hardware","Train","Software",1
+"Software","Test","Account Access",5
+"Software","Train","Account Access",2
+"Software","Test","Hardware",4
+"Software","Train","Hardware",4
+"Software","Test","Network",0
+"Software","Train","Network",2
+"Software","Test","Other",41
+"Software","Train","Other",37
+"Software","Test","Software",10
+"Software","Train","Software",20

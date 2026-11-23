@@ -1,0 +1,431 @@
+{
+  "sha256": {
+    "issues.csv": "eab3b8857bc19bd917e0767fb9c30b7714d5468b25c5a1c1cd71a760e9602f02",
+    "sample_utterances.csv": "6486067634164a8d9fc361887b9b700965e704c9b03c87ef4e19275cccf30196",
+    "kaggle.zip": "1e6c2508dba84f737ef30f589c2e4f7b2b27a4bbec753e6b5c84183a5f91ed4f",
+    "mack.jsonl": "81b38a8b0890702ef263379447cecae93431f1ee89596784649f61d6f2ba5f11"
+  },
+  "mendeley": {
+    "issue_metadata_rows": 66691,
+    "issue_metadata_duplicate_ids": 0,
+    "issue_types": {
+      "Ticket": 45275,
+      "Vacation": 856,
+      "Story": 4538,
+      "Bug": 53,
+      "Assistance": 109,
+      "Sprint Summary": 208,
+      "Sub-task": 544,
+      "Epic": 403,
+      "Retrospective": 241,
+      "Subtask": 4746,
+      "Service": 5300,
+      "Project": 842,
+      "Task": 1540,
+      "HD Service": 1686,
+      "Deployment": 350
+    },
+    "issue_description_column": false,
+    "issues_represented_in_utterances": 360,
+    "utterances_without_issue_match": 0,
+    "utterances_by_role": {
+      "reporter": 5700,
+      "others": 11584,
+      "assignee": 12820
+    },
+    "private_flagged_utterances": 8707,
+    "utterances": {
+      "rows": 30104,
+      "source_labels": {
+        "Ticket": 28650,
+        "Deployment": 764,
+        "HD Service": 690
+      },
+      "missing_text_rows": 23,
+      "nonblank_normalized_rows": 29883,
+      "length_chars_min_p25_median_p75_max": [
+        1,
+        9,
+        13,
+        55,
+        820
+      ],
+      "exact_duplicate_excess": 21532,
+      "normalized_duplicate_excess": 21799,
+      "normalized_conflicting_label_groups": 85,
+      "near_duplicates": {
+        "distinct_text_pairs": 123,
+        "affected_rows": 2357,
+        "pairs_with_disjoint_source_labels": 6
+      },
+      "masked_template_excess": 21824,
+      "masked_template_extra_matches_over_normalized": 25,
+      "largest_masked_template_group": 4714,
+      "language_estimate": {
+        "sample_rows": 2000,
+        "counts": {
+          "undetermined": 1261,
+          "en": 736,
+          "nl": 1,
+          "ar": 2
+        }
+      },
+      "sensitive_pattern_row_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone_format": 0,
+        "credential_assignment": 2,
+        "url": 0
+      },
+      "terms_by_source_label": {
+        "VPN": {
+          "Ticket": 6,
+          "Deployment": 3,
+          "HD Service": 1
+        },
+        "Wi-Fi": {
+          "Ticket": 0,
+          "Deployment": 0,
+          "HD Service": 0
+        },
+        "DNS": {
+          "Ticket": 6,
+          "Deployment": 4,
+          "HD Service": 8
+        },
+        "Hardware": {
+          "Ticket": 45,
+          "Deployment": 0,
+          "HD Service": 5
+        },
+        "Software": {
+          "Ticket": 1673,
+          "Deployment": 35,
+          "HD Service": 52
+        },
+        "Account Access": {
+          "Ticket": 71,
+          "Deployment": 14,
+          "HD Service": 3
+        }
+      },
+      "distinct_normalized_term_texts": {
+        "VPN": 9,
+        "Wi-Fi": 0,
+        "DNS": 14,
+        "Hardware": 49,
+        "Software": 973,
+        "Account Access": 86
+      }
+    },
+    "first_available_public_reporter_comments": {
+      "rows": 356,
+      "source_labels": {
+        "Ticket": 338,
+        "Deployment": 9,
+        "HD Service": 9
+      },
+      "missing_text_rows": 0,
+      "nonblank_normalized_rows": 356,
+      "length_chars_min_p25_median_p75_max": [
+        10,
+        103,
+        155.0,
+        248,
+        1547
+      ],
+      "exact_duplicate_excess": 0,
+      "normalized_duplicate_excess": 1,
+      "normalized_conflicting_label_groups": 0,
+      "near_duplicates": {
+        "distinct_text_pairs": 2,
+        "affected_rows": 4,
+        "pairs_with_disjoint_source_labels": 1
+      },
+      "masked_template_excess": 1,
+      "masked_template_extra_matches_over_normalized": 0,
+      "largest_masked_template_group": 2,
+      "language_estimate": {
+        "sample_rows": 356,
+        "counts": {
+          "en": 339,
+          "undetermined": 11,
+          "ar": 6
+        }
+      },
+      "sensitive_pattern_row_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone_format": 0,
+        "credential_assignment": 0,
+        "url": 0
+      },
+      "terms_by_source_label": {
+        "VPN": {
+          "Ticket": 0,
+          "Deployment": 0,
+          "HD Service": 0
+        },
+        "Wi-Fi": {
+          "Ticket": 0,
+          "Deployment": 0,
+          "HD Service": 0
+        },
+        "DNS": {
+          "Ticket": 0,
+          "Deployment": 0,
+          "HD Service": 0
+        },
+        "Hardware": {
+          "Ticket": 3,
+          "Deployment": 0,
+          "HD Service": 0
+        },
+        "Software": {
+          "Ticket": 26,
+          "Deployment": 0,
+          "HD Service": 1
+        },
+        "Account Access": {
+          "Ticket": 13,
+          "Deployment": 1,
+          "HD Service": 0
+        }
+      },
+      "distinct_normalized_term_texts": {
+        "VPN": 0,
+        "Wi-Fi": 0,
+        "DNS": 0,
+        "Hardware": 3,
+        "Software": 27,
+        "Account Access": 14
+      }
+    }
+  },
+  "kaggle": {
+    "archive_member": "all_tickets_processed_improved_v3.csv",
+    "columns": [
+      "Document",
+      "Topic_group"
+    ],
+    "rows": 47837,
+    "source_labels": {
+      "Hardware": 13617,
+      "Access": 7125,
+      "Miscellaneous": 7060,
+      "HR Support": 10915,
+      "Purchase": 2464,
+      "Administrative rights": 1760,
+      "Storage": 2777,
+      "Internal Project": 2119
+    },
+    "missing_text_rows": 0,
+    "nonblank_normalized_rows": 47837,
+    "length_chars_min_p25_median_p75_max": [
+      7,
+      110,
+      175,
+      304,
+      7015
+    ],
+    "exact_duplicate_excess": 0,
+    "normalized_duplicate_excess": 0,
+    "normalized_conflicting_label_groups": 0,
+    "near_duplicates": {
+      "distinct_text_pairs": 6192,
+      "affected_rows": 1940,
+      "pairs_with_disjoint_source_labels": 397
+    },
+    "masked_template_excess": 0,
+    "masked_template_extra_matches_over_normalized": 0,
+    "largest_masked_template_group": 1,
+    "language_estimate": {
+      "sample_rows": 2000,
+      "counts": {
+        "en": 1907,
+        "ro": 1,
+        "undetermined": 71,
+        "it": 5,
+        "ca": 8,
+        "es": 2,
+        "da": 2,
+        "sv": 1,
+        "fr": 3
+      }
+    },
+    "sensitive_pattern_row_counts": {
+      "email": 0,
+      "ipv4": 0,
+      "phone_format": 0,
+      "credential_assignment": 0,
+      "url": 0
+    },
+    "terms_by_source_label": {
+      "VPN": {
+        "Hardware": 0,
+        "Access": 0,
+        "Miscellaneous": 0,
+        "HR Support": 0,
+        "Purchase": 0,
+        "Administrative rights": 0,
+        "Storage": 0,
+        "Internal Project": 0
+      },
+      "Wi-Fi": {
+        "Hardware": 249,
+        "Access": 26,
+        "Miscellaneous": 40,
+        "HR Support": 15,
+        "Purchase": 61,
+        "Administrative rights": 13,
+        "Storage": 4,
+        "Internal Project": 1
+      },
+      "DNS": {
+        "Hardware": 0,
+        "Access": 0,
+        "Miscellaneous": 0,
+        "HR Support": 0,
+        "Purchase": 0,
+        "Administrative rights": 0,
+        "Storage": 0,
+        "Internal Project": 0
+      },
+      "Hardware": {
+        "Hardware": 2597,
+        "Access": 115,
+        "Miscellaneous": 175,
+        "HR Support": 418,
+        "Purchase": 245,
+        "Administrative rights": 159,
+        "Storage": 27,
+        "Internal Project": 16
+      },
+      "Software": {
+        "Hardware": 2957,
+        "Access": 1046,
+        "Miscellaneous": 1262,
+        "HR Support": 1402,
+        "Purchase": 1180,
+        "Administrative rights": 720,
+        "Storage": 270,
+        "Internal Project": 286
+      },
+      "Account Access": {
+        "Hardware": 466,
+        "Access": 1204,
+        "Miscellaneous": 13,
+        "HR Support": 13,
+        "Purchase": 5,
+        "Administrative rights": 118,
+        "Storage": 21,
+        "Internal Project": 0
+      }
+    },
+    "distinct_normalized_term_texts": {
+      "VPN": 0,
+      "Wi-Fi": 409,
+      "DNS": 0,
+      "Hardware": 3752,
+      "Software": 9123,
+      "Account Access": 1840
+    }
+  },
+  "mack": {
+    "columns": [
+      "messages"
+    ],
+    "user_opening_counts": {
+      "resolve": 7769,
+      "explain": 19354,
+      "mack": 17513,
+      "what": 1948,
+      "fix": 7890,
+      "configure": 2673
+    },
+    "assistant_pattern_row_counts": {
+      "email": 10,
+      "ipv4": 14,
+      "phone_format": 0,
+      "credential_assignment": 0,
+      "url": 11
+    },
+    "snake_case_reply_rows": 8989,
+    "rows": 103226,
+    "source_labels": {
+      "(unlabeled)": 103226
+    },
+    "missing_text_rows": 0,
+    "nonblank_normalized_rows": 103226,
+    "length_chars_min_p25_median_p75_max": [
+      5,
+      42,
+      50.0,
+      60,
+      490
+    ],
+    "exact_duplicate_excess": 29596,
+    "normalized_duplicate_excess": 30367,
+    "normalized_conflicting_label_groups": 0,
+    "near_duplicates": {
+      "distinct_text_pairs": 3484,
+      "affected_rows": 10156
+    },
+    "masked_template_excess": 32342,
+    "masked_template_extra_matches_over_normalized": 1975,
+    "largest_masked_template_group": 375,
+    "language_estimate": {
+      "sample_rows": 2000,
+      "counts": {
+        "en": 1682,
+        "undetermined": 243,
+        "ro": 7,
+        "it": 13,
+        "de": 2,
+        "fr": 33,
+        "ca": 5,
+        "es": 3,
+        "et": 1,
+        "nl": 4,
+        "no": 2,
+        "da": 4,
+        "af": 1
+      }
+    },
+    "sensitive_pattern_row_counts": {
+      "email": 0,
+      "ipv4": 8,
+      "phone_format": 0,
+      "credential_assignment": 0,
+      "url": 0
+    },
+    "terms_by_source_label": {
+      "VPN": {
+        "(unlabeled)": 4794
+      },
+      "Wi-Fi": {
+        "(unlabeled)": 1448
+      },
+      "DNS": {
+        "(unlabeled)": 1126
+      },
+      "Hardware": {
+        "(unlabeled)": 9175
+      },
+      "Software": {
+        "(unlabeled)": 11252
+      },
+      "Account Access": {
+        "(unlabeled)": 4533
+      }
+    },
+    "distinct_normalized_term_texts": {
+      "VPN": 3174,
+      "Wi-Fi": 1047,
+      "DNS": 640,
+      "Hardware": 6261,
+      "Software": 8516,
+      "Account Access": 3138
+    }
+  }
+}

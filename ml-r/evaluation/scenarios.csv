@@ -1,0 +1,21 @@
+id,title,description,expected,rationale
+vpn-example,VPN keeps disconnecting,"My company VPN disconnects every five minutes, even after restarting my laptop.",Network,Remote connectivity drops repeatedly
+vpn-auth,Remote tunnel times out,The VPN client never establishes a tunnel from my home connection.,Network,VPN transport fails before connection
+wifi-drop,Office Wi-Fi drops,Wireless devices lose access whenever they move between meeting rooms.,Network,Wireless connectivity failure
+dns,DNS lookup fails,The internal domain cannot be resolved but its IP address responds.,Network,Name resolution failure
+wired,Wired connection unreachable,Several desks cannot obtain an IP address after moving to a different Ethernet jack.,Network,Local network connectivity
+files,Shared network drive unavailable,The shared folder times out for everyone in the department.,Network,Shared storage connectivity
+reset,Password reset request,I forgot my directory password and need to reset it.,Account Access,Credential recovery
+lockout,Account is locked,My domain account is locked after failed sign-in attempts.,Account Access,Directory account lockout
+mfa,MFA prompts stopped,My authenticator cannot approve sign-in after replacing my phone.,Account Access,Identity verification failure
+onboard,New staff mailbox access,I need permission to sign into the shared account after onboarding.,Account Access,Permission needed for sign-in
+battery,Laptop will not power on,The laptop stays dark with a known working charger.,Hardware,Physical power failure
+printer,Printer jams,Paper jams at the feed roller regardless of which computer prints.,Hardware,Physical printer fault
+display,Monitor shows artifacts,Colored lines appear with two different laptops and cables.,Hardware,Physical display defect
+drive,Laptop drive clicks,The drive makes a clicking sound and is missing from firmware diagnostics.,Hardware,Physical storage device fault
+crash,Application crashes,The finance application quits when I open a report.,Software,Application runtime failure
+install,Software installation fails,The installer for the approved editor rolls back with an error.,Software,Software deployment error
+office,Outlook freezes,Outlook stops responding when attachments are opened.,Software,Office application malfunction
+browser,Browser extension will not start,The approved extension crashes after the browser update.,Software,Application compatibility issue
+routing,Request for support contact,Who should I contact to discuss an upcoming change to our internal support hours?,Other,General support inquiry
+retire,Retire an old workstation,Please mark the asset as end of life in the inventory system.,Other,Asset retirement follows the existing routing taxonomy

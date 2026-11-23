@@ -1,0 +1,94 @@
+$raw_labels
+                   split
+                    Test Train
+  Active Directory    49    84
+  Computer-Services   41    65
+  EOL                 58    45
+  Fileservice        138   546
+  O365                92   127
+  Software            58   164
+  Support general    221   541
+
+$application_labels
+                split
+                 Test Train
+  Account Access   49    84
+  Hardware         41    65
+  Network         138   546
+  Other           279   586
+  Software        150   291
+
+$blank_or_whitespace
+ Test Train 
+    0     0 
+
+$normalized_empty
+ Test Train 
+    0     1 
+
+$exact_duplicate_excess
+ Test Train 
+  129   660 
+
+$conflicting_normalized_groups
+[1] 2
+
+$exact_test_rows_seen_in_train
+[1] 161
+
+$near_train
+pairs  rows 
+  116   100 
+
+$near_test
+pairs  rows 
+   65    63 
+
+$near_cross
+pairs  rows 
+  139   139 
+
+$near_cross_test_rows
+[1] 63
+
+$common_training_terms_by_document_frequency
+$common_training_terms_by_document_frequency$`Account Access`
+
+ support   ticket     user       to      new received      for      the 
+      26       26       26       21       20       16       14       13 
+       a       ad      was   create       de      you   access 
+      12       12       10        9        9        9        8 
+
+$common_training_terms_by_document_frequency$Hardware
+
+impressora     ticket        new   received    support    printer         de 
+        24         23         22         21         21         18         10 
+        to instala<U+00E7><U+00E3>o          a        not        com         on computador 
+         8          7          6          6          5          5          4 
+        do 
+         4 
+
+$common_training_terms_by_document_frequency$Network
+
+   access      file     share         a        to       the       for   request 
+      477       470       465       254       109        95        91        89 
+     user   comment following requestor  username   service     grant 
+       89        88        88        88        88        86        85 
+
+$common_training_terms_by_document_frequency$Other
+
+  ticket  mailbox   shared   access  support       to      new      for 
+     222      196      192      177      171      146      138      132 
+received     user   please   create      the      and       in 
+     130      122      116      105       99       90       87 
+
+$common_training_terms_by_document_frequency$Software
+
+    ticket    support         to        new   received         on          a 
+       127        125        111         86         85         75         49 
+   missing         by connection  initiated     system        was  forwarded 
+        49         47         46         46         44         42         40 
+      your 
+        33 
+
+

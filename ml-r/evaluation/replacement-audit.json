@@ -1,0 +1,121 @@
+{
+  "sha256": "e88c6b6dcb23b376c0c7ff8f329ac7423002b84ec128aab8a663501ecd25eec9",
+  "columns": [
+    "text",
+    "label"
+  ],
+  "rows": 625,
+  "labels": {
+    "Account / Access": 125,
+    "Hardware": 125,
+    "Network": 125,
+    "Security": 125,
+    "Software": 125
+  },
+  "empty_text": 0,
+  "empty_label": 0,
+  "normalized_empty": 0,
+  "exact_duplicate_excess": 9,
+  "exact_row_duplicate_excess": 9,
+  "normalized_duplicate_excess": 9,
+  "rows_in_normalized_duplicate_groups": 18,
+  "conflicting_normalized_labels": 0,
+  "near_only_pairs": 114,
+  "near_only_rows": 205,
+  "word_count_min_median_max": [
+    8,
+    18.0,
+    25
+  ],
+  "generator_templates": {
+    "Hardware": 25,
+    "Software": 25,
+    "Network": 25,
+    "Account / Access": 25,
+    "Security": 25
+  },
+  "generator_prefix_count": 10,
+  "generator_suffix_count": 9,
+  "matched_rows": 625,
+  "unmatched_rows": 0,
+  "ambiguous_template_rows": 0,
+  "template_label_mismatches": 0,
+  "observed_templates_by_label": {
+    "Account / Access": 25,
+    "Hardware": 25,
+    "Network": 25,
+    "Security": 25,
+    "Software": 25
+  },
+  "template_group_size_distribution": {
+    "5": 125
+  },
+  "groups_spanning_simulated_random_partitions": 102,
+  "test_groups_also_in_simulated_train": 72,
+  "simulated_test_groups": 72,
+  "term_coverage": {
+    "vpn": {
+      "Account / Access": 0,
+      "Hardware": 0,
+      "Network": 20,
+      "Security": 0,
+      "Software": 0
+    },
+    "wifi": {
+      "Account / Access": 0,
+      "Hardware": 5,
+      "Network": 30,
+      "Security": 0,
+      "Software": 0
+    },
+    "dns": {
+      "Account / Access": 0,
+      "Hardware": 0,
+      "Network": 10,
+      "Security": 0,
+      "Software": 0
+    },
+    "password": {
+      "Account / Access": 15,
+      "Hardware": 0,
+      "Network": 0,
+      "Security": 5,
+      "Software": 0
+    },
+    "login": {
+      "Account / Access": 10,
+      "Hardware": 0,
+      "Network": 5,
+      "Security": 5,
+      "Software": 0
+    },
+    "mfa": {
+      "Account / Access": 15,
+      "Hardware": 0,
+      "Network": 0,
+      "Security": 5,
+      "Software": 0
+    },
+    "laptop": {
+      "Account / Access": 5,
+      "Hardware": 45,
+      "Network": 5,
+      "Security": 10,
+      "Software": 0
+    },
+    "printer": {
+      "Account / Access": 0,
+      "Hardware": 0,
+      "Network": 5,
+      "Security": 0,
+      "Software": 0
+    },
+    "crash": {
+      "Account / Access": 0,
+      "Hardware": 0,
+      "Network": 0,
+      "Security": 0,
+      "Software": 30
+    }
+  }
+}

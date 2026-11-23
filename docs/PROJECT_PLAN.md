@@ -1,4 +1,6 @@
-# Project plan (proposal)
+# Original project proposal
+
+This is the initial project plan. See the [root README](../README.md) for the implemented MVP, current setup, and remaining work.
 
 ## User flow
 1. Employee opens the support portal.

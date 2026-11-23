@@ -1,0 +1,272 @@
+[[1]]
+[[1]]$version
+[1] "tfidf-nb-v1"
+
+[[1]]$published
+[[1]]$published$classification
+[[1]]$published$classification$rows
+[1] 657
+
+[[1]]$published$classification$accuracy
+[1] 0.7199391
+
+[[1]]$published$classification$macro_f1
+[1] 0.6703851
+
+[[1]]$published$classification$per_category
+               support precision    recall        f1
+Account Access      49 0.5111111 0.4693878 0.4893617
+Hardware            41 0.4225352 0.7317073 0.5357143
+Network            138 0.9915966 0.8550725 0.9182879
+Other              279 0.9183673 0.6451613 0.7578947
+Software           150 0.5422222 0.8133333 0.6506667
+
+[[1]]$published$classification$confusion_matrix
+                predicted
+actual           Account Access Hardware Network Other Software Unclassified
+  Account Access             23        4       1    10       10            1
+  Hardware                    0       30       0     1       10            0
+  Network                     1        7     118     0       12            0
+  Other                      10       18       0   180       71            0
+  Software                   11       12       0     5      122            0
+
+
+[[1]]$published$default_team_routing_accuracy
+[1] 0.7199391
+
+[[1]]$published$high_confidence_incorrect
+[1] 161
+
+
+[[1]]$no_exact_training_overlap
+[[1]]$no_exact_training_overlap$classification
+[[1]]$no_exact_training_overlap$classification$rows
+[1] 496
+
+[[1]]$no_exact_training_overlap$classification$accuracy
+[1] 0.6653226
+
+[[1]]$no_exact_training_overlap$classification$macro_f1
+[1] 0.6356514
+
+[[1]]$no_exact_training_overlap$classification$per_category
+               support precision    recall        f1
+Account Access      42 0.4864865 0.4285714 0.4556962
+Hardware            41 0.4285714 0.7317073 0.5405405
+Network            102 0.9882353 0.8235294 0.8983957
+Other              167 0.8367347 0.4910180 0.6188679
+Software           144 0.5658537 0.8055556 0.6647564
+
+[[1]]$no_exact_training_overlap$classification$confusion_matrix
+                predicted
+actual           Account Access Hardware Network Other Software Unclassified
+  Account Access             18        4       1    10        8            1
+  Hardware                    0       30       0     1       10            0
+  Network                     1        7      84     0       10            0
+  Other                       7       17       0    82       61            0
+  Software                   11       12       0     5      116            0
+
+
+[[1]]$no_exact_training_overlap$default_team_routing_accuracy
+[1] 0.6653226
+
+[[1]]$no_exact_training_overlap$high_confidence_incorrect
+[1] 144
+
+
+[[1]]$synthetic
+[[1]]$synthetic$classification
+[[1]]$synthetic$classification$rows
+[1] 20
+
+[[1]]$synthetic$classification$accuracy
+[1] 0.35
+
+[[1]]$synthetic$classification$macro_f1
+[1] 0.3232601
+
+[[1]]$synthetic$classification$per_category
+               support precision recall        f1
+Account Access       4 0.2500000   0.25 0.2500000
+Hardware             4 0.6666667   0.50 0.5714286
+Network              6 0.0000000   0.00 0.0000000
+Other                2 0.2500000   0.50 0.3333333
+Software             4 0.3333333   0.75 0.4615385
+
+[[1]]$synthetic$classification$confusion_matrix
+                predicted
+actual           Account Access Hardware Network Other Software Unclassified
+  Account Access              1        0       0     0        3            0
+  Hardware                    0        2       0     0        2            0
+  Network                     1        1       0     3        1            0
+  Other                       1        0       0     1        0            0
+  Software                    1        0       0     0        3            0
+
+
+[[1]]$synthetic$default_team_routing_accuracy
+[1] 0.35
+
+[[1]]$synthetic$high_confidence_incorrect
+[1] 11
+
+
+[[1]]$scenario_predictions
+            id       expected       category confidence
+1  vpn-example        Network          Other  0.7745544
+2     vpn-auth        Network Account Access  0.9999992
+3    wifi-drop        Network       Hardware  0.9501907
+4          dns        Network          Other  0.9999995
+5        wired        Network       Software  0.9993690
+6        files        Network          Other  0.9530031
+7        reset Account Access Account Access  1.0000000
+8      lockout Account Access       Software  0.9996994
+9          mfa Account Access       Software  0.9997552
+10     onboard Account Access       Software  1.0000000
+11     battery       Hardware       Software  0.9999099
+12     printer       Hardware       Hardware  0.9855952
+13     display       Hardware       Software  0.9999535
+14       drive       Hardware       Hardware  0.5906718
+15       crash       Software Account Access  0.8094052
+16     install       Software       Software  1.0000000
+17      office       Software       Software  0.9961310
+18     browser       Software       Software  0.9999961
+19     routing          Other Account Access  1.0000000
+20      retire          Other          Other  1.0000000
+
+
+[[2]]
+[[2]]$version
+[1] "tfidf-logreg-v2"
+
+[[2]]$published
+[[2]]$published$classification
+[[2]]$published$classification$rows
+[1] 657
+
+[[2]]$published$classification$accuracy
+[1] 0.8006088
+
+[[2]]$published$classification$macro_f1
+[1] 0.7401048
+
+[[2]]$published$classification$per_category
+               support precision    recall        f1
+Account Access      49 0.8461538 0.4489796 0.5866667
+Hardware            41 0.8750000 0.5121951 0.6461538
+Network            138 0.9776119 0.9492754 0.9632353
+Other              279 0.7720365 0.9103943 0.8355263
+Software           150 0.6853147 0.6533333 0.6689420
+
+[[2]]$published$classification$confusion_matrix
+                predicted
+actual           Account Access Hardware Network Other Software Unclassified
+  Account Access             22        0       1    21        4            1
+  Hardware                    0       21       0     5       15            0
+  Network                     0        0     131     2        5            0
+  Other                       2        1       1   254       21            0
+  Software                    2        2       1    47       98            0
+
+
+[[2]]$published$default_team_routing_accuracy
+[1] 0.8006088
+
+[[2]]$published$high_confidence_incorrect
+[1] 12
+
+
+[[2]]$no_exact_training_overlap
+[[2]]$no_exact_training_overlap$classification
+[[2]]$no_exact_training_overlap$classification$rows
+[1] 496
+
+[[2]]$no_exact_training_overlap$classification$accuracy
+[1] 0.7379032
+
+[[2]]$no_exact_training_overlap$classification$macro_f1
+[1] 0.7017203
+
+[[2]]$no_exact_training_overlap$classification$per_category
+               support precision    recall        f1
+Account Access      42 0.8000000 0.3809524 0.5161290
+Hardware            41 0.8750000 0.5121951 0.6461538
+Network            102 0.9693878 0.9313725 0.9500000
+Other              167 0.6574074 0.8502994 0.7415144
+Software           144 0.6715328 0.6388889 0.6548043
+
+[[2]]$no_exact_training_overlap$classification$confusion_matrix
+                predicted
+actual           Account Access Hardware Network Other Software Unclassified
+  Account Access             16        0       1    20        4            1
+  Hardware                    0       21       0     5       15            0
+  Network                     0        0      95     2        5            0
+  Other                       2        1       1   142       21            0
+  Software                    2        2       1    47       92            0
+
+
+[[2]]$no_exact_training_overlap$default_team_routing_accuracy
+[1] 0.7379032
+
+[[2]]$no_exact_training_overlap$high_confidence_incorrect
+[1] 12
+
+
+[[2]]$synthetic
+[[2]]$synthetic$classification
+[[2]]$synthetic$classification$rows
+[1] 20
+
+[[2]]$synthetic$classification$accuracy
+[1] 0.35
+
+[[2]]$synthetic$classification$macro_f1
+[1] 0.3230769
+
+[[2]]$synthetic$classification$per_category
+               support precision recall        f1
+Account Access       4 1.0000000   0.25 0.4000000
+Hardware             4 1.0000000   0.25 0.4000000
+Network              6 0.0000000   0.00 0.0000000
+Other                2 0.1250000   0.50 0.2000000
+Software             4 0.4444444   1.00 0.6153846
+
+[[2]]$synthetic$classification$confusion_matrix
+                predicted
+actual           Account Access Hardware Network Other Software Unclassified
+  Account Access              1        0       0     2        1            0
+  Hardware                    0        1       1     0        2            0
+  Network                     0        0       0     5        1            0
+  Other                       0        0       0     1        1            0
+  Software                    0        0       0     0        4            0
+
+
+[[2]]$synthetic$default_team_routing_accuracy
+[1] 0.35
+
+[[2]]$synthetic$high_confidence_incorrect
+[1] 1
+
+
+[[2]]$scenario_predictions
+            id       expected       category confidence
+1  vpn-example        Network          Other  0.8578236
+2     vpn-auth        Network          Other  0.9246880
+3    wifi-drop        Network          Other  0.5737944
+4          dns        Network          Other  0.7923138
+5        wired        Network       Software  0.5078765
+6        files        Network          Other  0.5463860
+7        reset Account Access Account Access  0.7177579
+8      lockout Account Access       Software  0.5150302
+9          mfa Account Access          Other  0.7049790
+10     onboard Account Access          Other  0.6712776
+11     battery       Hardware       Software  0.3387474
+12     printer       Hardware       Hardware  0.5722519
+13     display       Hardware       Software  0.7117860
+14       drive       Hardware        Network  0.8228883
+15       crash       Software       Software  0.5531968
+16     install       Software       Software  0.9404124
+17      office       Software       Software  0.7246012
+18     browser       Software       Software  0.5342139
+19     routing          Other       Software  0.3847687
+20      retire          Other          Other  0.7159798
+
+

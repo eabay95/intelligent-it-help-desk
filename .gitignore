@@ -2,17 +2,47 @@
 .env
 .env.*
 !.env.example
+.aws/
+.pgpass
+pgpass.conf
+credentials.json
+*.key
+*.pem
+*.p12
+*.pfx
 # Python
 __pycache__/
 .venv/
 *.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
 # JavaScript
 node_modules/
 dist/
 # R
 .Rhistory
 .RData
+.Ruserdata
 .Rproj.user/
+# Local databases, logs, and downloads
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db-wal
+*.db-shm
+*.db-journal
+*.log
+logs/
+.downloads/
+*.download
+*.part
 # Local datasets and trained models
 ml-r/data/*
 !ml-r/data/.gitkeep
