@@ -340,3 +340,22 @@ def test_live_classifier_with_authenticated_ticket(client, monkeypatch):
     assert 0 <= ticket["classification_confidence"] <= 1
     assert ticket["recommended_team"]
     assert client.get(f"/tickets/{ticket['id']}").json() == ticket
+
+def test_only_technicians_can_delete_tickets(client, monkeypatch):
+    mock_classifier(monkeypatch, VALID_PREDICTION)
+    ticket = client.post("/tickets", json=TICKET).raise_for_status().json()
+    other = client.post(
+        "/tickets", headers=OTHER, json=TICKET
+    ).raise_for_status().json()
+    path = f"/tickets/{ticket['id']}"
+
+    assert client.delete(path).status_code == 403
+    assert client.get(path).json() == ticket
+    assert client.delete("/tickets/0", headers=TECH).status_code == 422
+
+    response = client.delete(path, headers=TECH)
+    assert response.status_code == 204
+    assert response.content == b""
+    assert client.get(path).status_code == 404
+    assert client.get("/tickets", headers=TECH).json() == [other]
+    assert client.delete(path, headers=TECH).status_code == 404

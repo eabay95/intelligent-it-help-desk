@@ -48,6 +48,6 @@ app = CORSMiddleware(
     allow_origins=[origin.strip() for origin in os.getenv(
         "FRONTEND_URL", "http://localhost:5173,http://127.0.0.1:5173"
     ).split(",")],
-    allow_methods=["GET", "POST", "PATCH"],
+    allow_methods=["GET", "POST", "PATCH", "DELETE"],
     allow_headers=["Content-Type", "Authorization"],
 )

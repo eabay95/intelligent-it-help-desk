@@ -1,7 +1,7 @@
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, HTTPException, Path
-from sqlalchemy import select, update
+from fastapi import APIRouter, Depends, HTTPException, Path, Response
+from sqlalchemy import select, update, delete
 from sqlalchemy.orm import Session
 
 from app.api.auth import CurrentProfile, DB, require_employee, require_technician
@@ -105,3 +105,20 @@ def update_ticket(ticket_id: TicketID, payload: TicketUpdate, db: DB):
     db.commit()
     db.refresh(ticket)
     return ticket
+
+@router.delete(
+    "/{ticket_id}",
+    status_code=204,
+    dependencies=[Depends(require_technician)],
+    responses={
+        401: {"description": "Valid access token required"},
+        403: {"description": "Technician access required"},
+        404: {"description": "Ticket not found"},
+    },
+)
+def delete_ticket(ticket_id: TicketID, db: DB) -> Response:
+    deleted_id = db.scalar(delete(Ticket).where(Ticket.id == ticket_id).returning(Ticket.id))
+    if deleted_id is None:
+        raise HTTPException(404, "Ticket not found.")
+    db.commit()
+    return Response(status_code=204)
